@@ -16,13 +16,14 @@ import Header from '../../components/Header/Header';
 import ContestSideBar from '../../components/ContestSideBar/ContestSideBar';
 import styles from './ContestPage.module.sass';
 import OfferBox from '../../components/OfferBox/OfferBox';
-import OfferForm from '../../components/OfferForm/OfferForm';
+import OfferForm from '../../components/Forms/OfferForm';
 import CONSTANTS from '../../constants';
 import Brief from '../../components/Brief/Brief';
 import Spinner from '../../components/Spinner/Spinner';
 import TryAgain from '../../components/TryAgain/TryAgain';
 import 'react-image-lightbox/style.css';
 import Error from '../../components/Error/Error';
+
 
 class ContestPage extends React.Component {
   componentWillUnmount() {

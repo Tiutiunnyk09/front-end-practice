@@ -4,9 +4,10 @@ import { connect } from 'react-redux';
 import { clearUserError } from '../../actions/actionCreator';
 import styles from './UpdateUserInfoForm.module.sass';
 import ImageUpload from '../InputComponents/ImageUpload/ImageUpload';
-import FormInput from '../FormInput/FormInput';
+import FormInput from '../Forms/FormInput';
 import Schems from '../../validators/validationSchems';
 import Error from '../Error/Error';
+
 
 const UpdateUserInfoForm = (props) => {
   const {
