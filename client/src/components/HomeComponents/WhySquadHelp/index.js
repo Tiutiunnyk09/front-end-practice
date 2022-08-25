@@ -7,7 +7,7 @@ import styles from './WhySquadHelp.module.sass';
 const WhySquadHelp = () => {
   return (
     <div className={styles.container__description}>
-      <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
+      <h2 className={styles.blueUnderline}>why squadhelp?</h2>
       <div className={styles.cardContainer}>
         {data.map(({ id, img, alt, heading, text }) => (
           <div className={styles.card} key={id}>

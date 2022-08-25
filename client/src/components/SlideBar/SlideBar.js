@@ -48,7 +48,6 @@ const SliderBar = (props) => {
             <img src={props.images[key]} alt="slide" />
             <p>{carouselConstants.EXAMPLE_SLIDER_TEXT[index]}</p>
           </div>
-
         ));
       }
       case carouselConstants.FEEDBACK_SLIDER: {
@@ -63,14 +62,8 @@ const SliderBar = (props) => {
     }
   };
   return (
-    <Flickity
-      className={getStyleName()}
-      elementType="div"
-      options={options}
-    >
-      {
-                renderSlides()
-            }
+    <Flickity className={getStyleName()} elementType="div" options={options}>
+      {renderSlides()}
     </Flickity>
   );
 };
