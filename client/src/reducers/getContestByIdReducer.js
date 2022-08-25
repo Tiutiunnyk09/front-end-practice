@@ -1,5 +1,4 @@
 import ACTION from '../actions/actionTypes';
-import CONTANTS from '../constants';
 
 const initialState = {
   isFetching: true,
@@ -16,6 +15,7 @@ const initialState = {
   isShowModal: false,
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function (state = initialState, action) {
   switch (action.type) {
     case ACTION.GET_CONTEST_BY_ID_REQUEST: {

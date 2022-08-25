@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import valid from 'card-validator';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   LoginSchem: yup.object().shape({
     email: yup.string().email('check email').required('required'),
@@ -30,6 +31,7 @@ export default {
     file: yup.mixed(),
   }),
   filterSchem: yup.object().shape({
+    // eslint-disable-next-line no-sequences
     typeIndex: yup.number().oneOf[1, 2, 3, 4, 5, 6, 7],
     contestId: yup.string(),
     awardSort: yup.string().matches(/(desc|asc)/),

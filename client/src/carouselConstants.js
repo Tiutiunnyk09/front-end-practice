@@ -1,5 +1,6 @@
 import CONSTANTS from './constants';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   MAIN_SLIDER: 'MAIN_SLIDER',
   EXAMPLE_SLIDER: 'EXAMPLE_SLIDER',
