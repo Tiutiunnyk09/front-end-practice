@@ -17,6 +17,7 @@ import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
+import PricePage from './pages/PricePage';
 
 class App extends Component {
   render() {
@@ -34,6 +35,7 @@ class App extends Component {
           pauseOnHover
         />
         <Switch>
+          <Route exact path="/price" component={PricePage} />
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={WithNotPrivate(LoginPage)} />
           <Route

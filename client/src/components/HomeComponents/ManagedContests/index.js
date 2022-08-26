@@ -35,7 +35,7 @@ const ManagedContests = () => {
             </div>
           ))}
         </div>
-        <Link className={styles.button_link} to="/dashboard">
+        <Link className={styles.button_link} to="/price">
           learn more about managed contests
         </Link>
       </div>
