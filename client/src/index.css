@@ -24,6 +24,10 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+:root{
+  font-family: Raleway, sans-serif;
+}
+
 /* make sure to set some focus styles for accessibility */
 :focus {
     outline: 0;

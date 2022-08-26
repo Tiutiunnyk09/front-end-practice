@@ -10,6 +10,7 @@ import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import WhySquadHelp from '../../components/HomeComponents/WhySquadHelp';
 import Advertisement from '../../components/HomeComponents/Advertisement';
+import ManagedContests from '../../components/HomeComponents/ManagedContests';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -169,6 +170,7 @@ const Home = (props) => {
               />
             </div>
           </div>
+          <ManagedContests />
           <Footer />
         </>
       )}
