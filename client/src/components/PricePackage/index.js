@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from './PricePackage.json';
+import PricePackageCategory from './PricePackageCategory';
 
 import styles from './PricePackage.module.scss';
-import PricePackageCategory from '../PricePackageCategory';
 
 const PricePackage = () => {
   const { heading, categories } = data;
+
+  const [isActive, setIsActive] = useState(null);
+
+  const isActiveBox = (id) => {
+    if (isActive === id) {
+      return setIsActive(null);
+    }
+    setIsActive(id);
+  };
 
   return (
     <section className={styles.wrapper}>
@@ -13,7 +22,12 @@ const PricePackage = () => {
         <h1 className={styles.heading}>{heading}</h1>
         <div className={styles.categories}>
           {categories.map((category) => (
-            <PricePackageCategory category={category} key={category.id} />
+            <PricePackageCategory
+              category={category}
+              key={category.id}
+              isActiveBox={isActiveBox}
+              isActive={isActive}
+            />
           ))}
         </div>
       </div>

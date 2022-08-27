@@ -10,7 +10,7 @@ COPY package*.json ./
 
 COPY . .
 
-EXPOSE 5001
+EXPOSE 5000
 
 RUN npm install
 

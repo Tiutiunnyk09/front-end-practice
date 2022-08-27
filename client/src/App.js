@@ -25,7 +25,7 @@ class App extends Component {
       <Router history={browserHistory}>
         <ToastContainer
           position="top-center"
-          autoClose={5001}
+          autoClose={5000}
           hideProgressBar
           newestOnTop={false}
           closeOnClick

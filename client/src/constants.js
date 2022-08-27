@@ -1,6 +1,6 @@
 const env = process.env.NODE_ENV || 'development'
 const serverIP = 'localhost'
-const serverPort = 5001
+const serverPort = 5000
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   CONTACTS: {

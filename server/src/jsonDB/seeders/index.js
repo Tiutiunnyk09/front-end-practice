@@ -5,7 +5,9 @@ function runSeeders(client) {
   const basename = path.basename(__filename);
   readdirSync(path.resolve(__dirname, './'))
     .filter((file) => {
-      return file.indexOf('.') !== 0 && (file !== basename) && file.slice(-3) === '.js';
+      return (
+        file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
+      );
     })
     .forEach((file) => {
       try {
